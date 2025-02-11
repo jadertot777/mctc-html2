@@ -1,0 +1,73 @@
+/* All the general body styles */
+body {
+  font-family: Andale Mono, monospace	;
+  margin: 0;
+  padding: 0;
+  background-color: #A8DCAB; /* Celadon Color*/
+}
+
+/* Header styles */
+header {
+  background-color: #8cb88e;
+  text-align: center;
+  padding: 1rem;
+}
+
+header h1 {
+  font-family: Impact, fantasy;
+  color: #2f3d2f;
+  font-size: 2rem;
+}
+
+header h2 {
+  font-family: Andale Mono, monospace;
+  color: #4e664f;
+  font-size: 1.5rem;
+}
+
+header p {
+  font-family: Andale Mono, monospace;
+  color: #4e664f;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Styles for my Navigation bar. Still working on*/
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+nav a {
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+  background-color: #444;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+/* Container for my main content */
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Footer styles (don't know if I want to keep this yet) */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  margin-top: 2rem;
+}
