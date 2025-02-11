@@ -47,14 +47,14 @@ nav ul li {
   margin-right: 1rem;
 }
 
-nav a {
+nav ul li a {
   color: white;
   padding: 1rem;
   text-decoration: none;
   background-color: #2f3d2f;
 }
 
-nav a:hover {
+nav ul li a:hover {
   background-color: #4e664f;
 }
 
