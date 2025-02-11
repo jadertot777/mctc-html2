@@ -1,6 +1,8 @@
 /* All the general body styles */
 body {
-  font-family: Andale Mono, monospace	;
+  font-family: Andale Mono, monospace;
+  color: #2f3d2f;
+  font-size: 1rem;
   margin: 0;
   padding: 0;
   background-color: #A8DCAB; /* Celadon Color*/
@@ -49,11 +51,11 @@ nav a {
   color: white;
   padding: 1rem;
   text-decoration: none;
-  background-color: #444;
+  background-color: #2f3d2f;
 }
 
 nav a:hover {
-  background-color: #555;
+  background-color: #4e664f;
 }
 
 /* Container for my main content */
@@ -61,13 +63,4 @@ nav a:hover {
   max-width: 1200px;
   margin: 2rem auto;
   padding: 0 1rem;
-}
-
-/* Footer styles (don't know if I want to keep this yet) */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #333;
-  color: #fff;
-  margin-top: 2rem;
 }
