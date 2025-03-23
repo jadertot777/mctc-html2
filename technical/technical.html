@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>Technical Documentation</header>
+        <a class="nav-link" href="#HTML_Basics">HTML Basics</a>
+        <a class="nav-link" href="#CSS_Styling">CSS Styling</a>
+        <a class="nav-link" href="#Data_Types">Data Types</a>
+        <a class="nav-link" href="#JavaScript_Fundamentals">JavaScript Fundamentals</a>
+        <a class="nav-link" href="#Loops">Loops</a>
+        <a class="nav-link" href="#Responsive_Design">Responsive Design</a>
+        <a class="nav-link" href="#Best_Practices">Best Practices</a>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="HTML_Basics">
+            <header>HTML Basics</header>
+            <article>
+                <p>HTML (HyperText Markup Language) is the standard language for web pages.</p>
+                <p>It defines the structure of a webpage using elements.</p>
+                <ul>
+                    <li>
+                        <strong>Headings (h1-h6)</strong>
+                        <p>Headings are used to define the structure of your content, from the largest (h1) to the smallest (h6).</p>
+                        <code>
+                            <h1>&lt;h1&gt;Heading 1&lt;/h1&gt;</h1>
+                            <h2>&lt;h2&gt;Heading 2&lt;/h2&gt;</h2>
+                            <h3>&lt;h3&gt;Heading 3&lt;/h3&gt;</h3>
+                            <h4>&lt;h4&gt;Heading 4&lt;/h4&gt;</h4>
+                            <h5>&lt;h5&gt;Heading 5&lt;/h5&gt;</h5>
+                            <h6>&lt;h6&gt;Heading 6&lt;/h6&gt;</h6>
+                        </code>
+                    </li>
+                    <li>
+                        <strong>Paragraphs (p)</strong>
+                        <p>Paragraphs are used to define blocks of text in a webpage.</p>
+                        <code>&lt;p&gt;This is a paragraph&lt;/p&gt;</code>
+                        <p>Output: <p>This is a paragraph</p></p>
+                    </li>
+                    <li>
+                        <strong>Lists (ul, ol, li)</strong>
+                        <p>Lists can be either ordered (ol) or unordered (ul). Each item is defined by the list tag.</p>
+                        <code>&lt;ul&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;li&gt;Item 2&lt;/li&gt;&lt;/ul&gt;</code>
+                        <p>Output: 
+                            <ul>
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                            </ul>
+                        </p>
+                        <code>&lt;ol&gt;&lt;li&gt;First item&lt;/li&gt;&lt;li&gt;Second item&lt;/li&gt;&lt;/ol&gt;</code>
+                        <p>Output: 
+                            <ol>
+                                <li>First item</li>
+                                <li>Second item</li>
+                            </ol>
+                        </p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="CSS_Styling">
+            <header>CSS Styling</header>
+            <article>
+                <p>CSS (Cascading Style Sheets) styles HTML elements.</p>
+                <p>It controls layout, colors, fonts, and more.</p>
+                <code>body { background-color: lightgray; }</code>
+                <ul>
+                    <li>
+                        <strong>Selectors</strong>
+                        <p>A CSS selector is used to select an HTML element and apply styles to it.</p>
+                        <code>p { color: blue; }</code>
+                        <p>Output: <span style="color: blue;">This text is blue.</span></p>
+                    </li>
+                    <li>
+                        <strong>Box Model</strong>
+                        <p>The CSS box model is a box that wraps around every HTML element, consisting of margins, borders, padding, and the content itself.</p>
+                        <code>div { padding: 10px; border: 2px solid black; }</code>
+                        <p>Output: 
+                            <div style="padding: 10px; border: 2px solid black;">This is a div with padding and border.</div>
+                        </p>
+                    </li>
+                    <li>
+                        <strong>Flexbox & Grid</strong>
+                        <p>Flexbox and Grid are layout models in CSS used to arrange elements in rows or columns.</p>
+                        <code>div { display: flex; justify-content: center; }</code>
+                        <p>Output: 
+                            <div style="display: flex; justify-content: center;">This text is centered.</div>
+                        </p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="Data_Types">
+            <header>Data Types</header>
+            <article>
+                <p>JavaScript has several data types that are essential for working with values in your applications.</p>
+                <p>The data types can be divided into two categories: Primitive data types and Objects.</p>
+                <ul>
+                    <li>
+                        <strong>Boolean</strong>
+                        <p>The Boolean data type has two possible values: true and false.</p>
+                        <code>let isActive = true;</code>
+                        <p>Output: The value of isActive is true, meaning the variable is active.</p>
+                    </li>
+                    <li>
+                        <strong>Null</strong>
+                        <p>The null data type represents the intentional absence of any object value.</p>
+                        <code>let user = null;</code>
+                        <p>Output: The value of user is null, indicating that the user does not exist or is undefined.</p>
+                    </li>
+                    <li>
+                        <strong>Undefined</strong>
+                        <p>The undefined data type represents a variable that has been declared but not assigned a value.</p>
+                        <code>let name;</code>
+                        <p>Output: The value of name is undefined because it has been declared but not assigned any value.</p>
+                    </li>
+                    <li>
+                        <strong>Number</strong>
+                        <p>The Number data type represents both integers and floating-point numbers.</p>
+                        <code>let age = 25;</code>
+                        <p>Output: The value of age is 25, which is a number representing someone's age.</p>
+                        <code>let pi = 3.14159;</code>
+                        <p>Output: The value of pi is 3.14159, which is a floating-point number.</p>
+                    </li>
+                    <li>
+                        <strong>String</strong>
+                        <p>The String data type represents a sequence of characters enclosed in single, double, or backticks (for template literals).</p>
+                        <code>let greeting = "Hello, world!";</code>
+                        <p>Output: The value of greeting is "Hello, world!", which is a string of characters.</p>
+                    </li>
+                    <li>
+                        <strong>Symbol (ES6)</strong>
+                        <p>The Symbol data type is a unique and immutable data type introduced in ES6 that can be used to create unique identifiers.</p>
+                        <code>let uniqueId = Symbol('id');</code>
+                        <p>Output: The value of uniqueId is a unique symbol, which is not equal to any other symbol or string.</p>
+                    </li>
+                    <li>
+                        <strong>Object</strong>
+                        <p>The Object data type is a collection of properties, where each property has a key (string) and a value (any data type).</p>
+                        <code>let person = { name: "John", age: 30, isActive: true }; </code>
+                        <p>Output: The value of person is an object with three properties: name, age, and isActive.</p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="JavaScript_Fundamentals">
+            <header>JavaScript Fundamentals</header>
+            <article>
+                <p>JavaScript makes web pages interactive.</p>
+                <p>It enables dynamic content updates, user interaction, and more.</p>
+                <code>console.log("Hello, World!");</code>
+                <ul>
+                    <li>
+                        <strong>Variables</strong>
+                        <p>Variables in JavaScript store values that can be used later in the program.</p>
+                        <code>let message = "Hello, JavaScript!";</code>
+                        <p>Output: <span id="variable-output"></span></p>
+                        <script>
+                            let message = "Hello, JavaScript!";
+                            document.getElementById("variable-output").innerText = message;
+                        </script>
+                    </li>
+                    <li>
+                        <strong>Functions</strong>
+                        <p>Functions are reusable blocks of code that perform a specific task.</p>
+                        <code>function greet() { alert("Hello!"); }</code>
+                        <p>Output: 
+                            <button onclick="greet()">Click to Greet</button> 
+                            (Click the button to trigger the function)
+                        </p>
+                        <script>
+                            function greet() {
+                                alert("Hello!");
+                            }
+                        </script>
+                    </li>
+                    <li>
+                        <strong>DOM Manipulation</strong>
+                        <p>DOM manipulation allows you to change the content, structure, and style of a web page dynamically.</p>
+                        <code>document.getElementById("myElement").innerText = "New content!";</code>
+                        <p>Output: 
+                            <div id="myElement">This is the original content.</div>
+                            <button onclick="changeContent()">Change Content</button>
+                        </p>
+                        <script>
+                            function changeContent() {
+                                document.getElementById("myElement").innerText = "New content!";
+                            }
+                        </script>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="Loops">
+            <header>Loops</header>
+                <article>
+                <p>Loops are used to execute a block of code repeatedly as long as a specified condition is met.</p>
+                <p>JavaScript has several types of loops, each serving different use cases.</p>
+                <ul>
+                    <li>
+                        <strong>For Loop</strong>
+                        <p>The for loop is typically used when you know in advance how many times you want to execute a statement or a block of code.</p>
+                        <code>
+                            for (let i = 0; i < 5; i++) {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;console.log(i);<br>
+                            }
+                        </code>
+                        <p>Output: The loop will print numbers from 0 to 4:<br><br>0<br>1<br>2<br>3<br>4</p>
+                        
+                    </li>
+                    <li>
+                        <strong>While Loop</strong>
+                        <p>The while loop repeats as long as the specified condition is true.</p>
+                        <code>
+                            let i = 0;<br>
+                            while (i < 5) {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;console.log(i);<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;i++;<br>
+                            }
+                        </code>
+                        <p>Output: The loop will print numbers from 0 to 4:<br><br>0<br>1<br>2<br>3<br>4</p>
+                    </li>
+                    <li>
+                        <strong>Do...While Loop</strong>
+                        <p>The do...while loop executes the block of code once before checking the condition, and then it repeats as long as the condition is true.</p>
+                        <code>
+                            let i = 0;<br>
+                            do {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;console.log(i);<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;i++;<br>
+                            } while (i < 5);
+                        </code>
+                        <p>Output: The loop will print numbers from 0 to 4:<br><br>0<br>1<br>2<br>3<br>4</p>
+                    </li>
+                    <li>
+                        <strong>For...In Loop</strong>
+                        <p>The for...in loop is used to iterate over the properties of an object.</p>
+                        <code>
+                            let person = { name: "John", age: 30, job: "Developer" };<br>
+                            for (let key in person) {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;console.log(key + ": " + person[key]);<br>
+                            }
+                        </code>
+                        <p>Output: The loop will print each property of the object:
+                            <br><br>name: John<br>age: 30<br>job: Developer</p>
+                    </li>
+                    <li>
+                        <strong>For...Of Loop</strong>
+                        <p>The for...of loop is used to iterate over iterable objects such as arrays.</p>
+                        <code>
+                            let numbers = [10, 20, 30, 40];<br>
+                            for (let num of numbers) {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;console.log(num);<br>
+                            }
+                        </code>
+                        <p>Output: The loop will print the values in the array:<br><br>10<br>20<br>30<br>40</p>
+                    </li>
+                </ul>
+                </article>
+        </section>
+
+        <section class="main-section" id="Responsive_Design">
+            <header>Responsive Design</header>
+            <article>
+                <p>Responsive design ensures websites work on all screen sizes.</p>
+                <p>Techniques include flexible layouts, media queries, and scalable assets.</p>
+                <ul>
+                    <li>
+                        <strong>Media Queries</strong>
+                        <p>Media queries allow different styles to be applied based on conditions like screen width, height, orientation, etc.</p>
+                        <code>@media (max-width: 600px) { body { font-size: 14px; } }</code>
+                        <p>Output: On screens smaller than 600px, the body font-size will be reduced to 14px. This is a simple example of applying responsive styles using media queries.</p>
+                    </li>
+                    <li>
+                        <strong>Viewport Units</strong>
+                        <p>Viewport units allow you to size elements relative to the viewport's size. There are four types of viewport units: vw (viewport width), vh (viewport height), vmin, and vmax.</p>
+                        <code>h1 { font-size: 10vw; }</code>
+                        <p>Output: The font-size of the `<h1>` element will adjust based on 10% of the viewport's width. As the viewport size changes, the text size will scale accordingly.</p>
+                    </li>
+                    <li>
+                        <strong>Mobile-First Design</strong>
+                        <p>Mobile-first design is a strategy where you start by designing for smaller screens and progressively add styles for larger screens.</p>
+                        <code>@media (min-width: 768px) { body { font-size: 16px; } }</code>
+                        <p>Output: Initially, the design will be optimized for mobile devices. As the screen width increases to 768px or more, the body font-size will be increased to 16px for larger devices like tablets and desktops.</p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="Best_Practices">
+            <header>Best Practices</header>
+            <article>
+                <p>Best coding practices improve performance and maintainability.</p>
+                <p>Follow industry standards to write clean, efficient code.</p>
+                <ul>
+                    <li>
+                        <strong>Code Readability</strong>
+                        <p>Writing code that is easy to read and understand is crucial for team collaboration and maintenance. Use descriptive variable names and comments where necessary.</p>
+                        <code>
+                            const calculateArea = (width, height) => width * height;
+                        </code>
+                        <p>Explanation: The function name calculateArea clearly describes its purpose, making it easy to understand at a glance.</p>
+                        <p>Output: This code calculates the area of a rectangle when called with appropriate arguments.</p>
+                    </li>
+                    <li>
+                        <strong>Performance Optimization</strong>
+                        <p>Optimize code to improve performance, particularly for applications with large data sets or intensive operations. Consider time complexity and memory usage.</p>
+                        <code>
+                            let numbers = [1, 2, 3, 4, 5];<br>
+                            let sum = numbers.reduce((acc, num) => acc + num, 0);
+                        </code>
+                        <p>Explanation: The reduce() method is an efficient way to sum elements in an array.</p>
+                        <p>Output: The code calculates the sum of all numbers in the array.</p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
