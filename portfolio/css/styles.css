@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    line-height: 1.6;
+  }
+  
+  #navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #navbar a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  #welcome-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: lightblue;
+  }
+  
+  #projects {
+    padding: 100px 20px;
+    background: #f4f4f4;
+  }
+  
+  .project-tile {
+    background: white;
+    padding: 20px;
+    margin: 10px 0;
+  }
+  
+  @media (max-width: 600px) {
+    #navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
